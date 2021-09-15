@@ -10,22 +10,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Поддержка пользователей</title>
+    <title>Feedback</title>
   </head>
   <body>
+    <div class="lang-wrapper">
+      <div class="lang-win">
+        <div class="ru-lang">
+          <img src="img/ru-flag.png" alt="ru flag" class="flag-img" />
+          <button class="lang-title choose-lang-ru">Русский</button>
+        </div>
+        <div class="en-lang">
+          <img src="img/en-flag.png" alt="en flag" class="flag-img" />
+          <button class="lang-title choose-lang-en">English</button>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="form-wrapper">
-        <div class="form-title">Форма обратной связи</div>
+        <div class="form-title"></div>
         <form action="#">
-          <label for="problem">Опишите вашу проблему</label>
+          <label for="problem"></label>
           <textarea name="problem" id="problem"></textarea>
-          <label for="name">Введите имя</label>
-          <input type="text" name="name" id="name" placeholder="Иван" />
-          <label for="name">Введите номер телефона</label>
+          <label for="name"></label>
+          <input type="text" name="name" id="name" class="input-name" />
+          <label for="name"></label>
           <input type="tel" name="tel" id="tel" placeholder="+7 999 999 999" />
-          <button>Отправить</button>
+          <button class="btn-send"></button>
         </form>
       </div>
     </div>
+
+    <div class="answer-wrapper hide">
+      <div class="answer-win">
+        <div class="close-btn"></div>
+        <span class="answer-text"></span>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
